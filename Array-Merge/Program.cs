@@ -18,6 +18,14 @@ namespace Array_Merge
                 new []{1,2},
                 new []{1,4,5} // Not an valid interval, but the program will ignore the 4 and just look at 1 and 5
             };
+            Merge(test);
+        }
+
+        //----------------------------------------------------------------------------------------
+        // Performs the Sorting and Merging as well as the console outputs
+        //----------------------------------------------------------------------------------------
+        private static void Merge(List<int[]> test)
+        {
             // No need to merge anything, if there are not enough intervals
             if (test.Count > 2)
             {
