@@ -1,0 +1,14 @@
+C:\Users\ch9gs7\source\repos\Array-Merge\bin\Debug\netcoreapp3.1\Array-Merge.exe
+C:\Users\ch9gs7\source\repos\Array-Merge\bin\Debug\netcoreapp3.1\Array-Merge.deps.json
+C:\Users\ch9gs7\source\repos\Array-Merge\bin\Debug\netcoreapp3.1\Array-Merge.runtimeconfig.json
+C:\Users\ch9gs7\source\repos\Array-Merge\bin\Debug\netcoreapp3.1\Array-Merge.runtimeconfig.dev.json
+C:\Users\ch9gs7\source\repos\Array-Merge\bin\Debug\netcoreapp3.1\Array-Merge.dll
+C:\Users\ch9gs7\source\repos\Array-Merge\bin\Debug\netcoreapp3.1\Array-Merge.pdb
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.csproj.AssemblyReference.cache
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.AssemblyInfoInputs.cache
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.AssemblyInfo.cs
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.csproj.CoreCompileInputs.cache
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.dll
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.pdb
+C:\Users\ch9gs7\source\repos\Array-Merge\obj\Debug\netcoreapp3.1\Array-Merge.genruntimeconfig.cache
