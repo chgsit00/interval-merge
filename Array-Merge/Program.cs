@@ -21,6 +21,8 @@ namespace Array_Merge
             // No need to merge anything, if there are not enough intervals
             if (test.Count > 2)
             {
+                Console.WriteLine("\nInput:");
+                PrintIntervals(test);
                 var sortedIntervals = SortIntervals(test);
                 Console.WriteLine("\nSorted Input Intervals:");
                 PrintIntervals(sortedIntervals);
@@ -33,6 +35,7 @@ namespace Array_Merge
                 Console.WriteLine("Not enough intervals provided to perform a merge");
                 PrintIntervals(test);
             }
+            Console.ReadKey();
         }
 
         //----------------------------------------------------------------------------------------
