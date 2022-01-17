@@ -39,7 +39,7 @@ namespace Array_Merge
         }
 
         //----------------------------------------------------------------------------------------
-        // Merges Intervals represented by a list of one-dimensional arrays with two members each
+        // Merges Intervals represented by a list of one-dimensional arrays
         //----------------------------------------------------------------------------------------
         private static List<int[]> MergeIntervals(IReadOnlyList<int[]> intervals)
         {
