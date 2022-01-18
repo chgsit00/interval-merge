@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array-Merge", "Array-Merge.csproj", "{943AA350-46F4-471F-A5A6-CF50E29F3794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array-Merge", "Array-Merge.csproj", "{943AA350-46F4-471F-A5A6-CF50E29F3794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{C441E3DE-2154-43C4-B7D5-6CE5BB7B97B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{943AA350-46F4-471F-A5A6-CF50E29F3794} = {943AA350-46F4-471F-A5A6-CF50E29F3794}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{943AA350-46F4-471F-A5A6-CF50E29F3794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{943AA350-46F4-471F-A5A6-CF50E29F3794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{943AA350-46F4-471F-A5A6-CF50E29F3794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C441E3DE-2154-43C4-B7D5-6CE5BB7B97B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C441E3DE-2154-43C4-B7D5-6CE5BB7B97B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C441E3DE-2154-43C4-B7D5-6CE5BB7B97B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C441E3DE-2154-43C4-B7D5-6CE5BB7B97B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
