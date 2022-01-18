@@ -17,5 +17,5 @@ For example: [1,4] [3,6] [6,10] [11,20] -> [1,10] [11,20]
 - Navigate to the Program.cs class
 - Hit the Run-Button on top of Visual Studio
 
-Further Details in the Dokumentation
+Further Details in the documentation
 
