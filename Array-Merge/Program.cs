@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Array_Merge
 {
@@ -12,11 +14,11 @@ namespace Array_Merge
             {
                 new []{4,8},
                 new []{12,15},
-                new []{19,10},
+                new []{9,10},
                 new []{15,20},
                 new []{3,6},
                 new []{1,2},
-                new []{1,4,5} // Not an valid interval, but the program will ignore the 4 and just look at 1 and 5
+                new []{1,5} // Not an valid interval, but the program will ignore the 4 and just look at 1 and 5
             };
             try
             {
@@ -56,6 +58,7 @@ namespace Array_Merge
             var buffer = new Stack<int[]>();
             // put the first interval from the sorted List into the buffer for later comparison if valid
             CheckForValidInterval(intervals.First());
+            PrintMemorySize(intervals.First());
             buffer.Push(intervals.First());
             // Start with the second interval in the sorted List
             for (var i = 1; i < intervals.Count; i++)
@@ -75,8 +78,22 @@ namespace Array_Merge
                     buffer.Push(intervals[i]);
                 }
             }
+            PrintMemorySize(intervals);
+            PrintMemorySize(buffer);
             // The Stack ist printed in descending order, so it has to be reversed
             return buffer.Reverse().ToList();
+        }
+
+        private static void PrintMemorySize(object o)
+        {
+            long size = 0;
+            using (Stream s = new MemoryStream())
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(s, o);
+                size = s.Length;
+            }
+            Console.WriteLine("\n\n Size of object ${0}: ${1} bytes", o, size);
         }
 
         //----------------------------------------------------------------------------------------

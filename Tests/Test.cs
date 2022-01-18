@@ -33,6 +33,31 @@ namespace Tests
             CollectionAssert.AreEqual(expectedResult, result, StructuralComparisons.StructuralComparer);
         }
 
+        // This is unnecessary, because the type is validated by the method header
+
+        //[TestMethod]
+        //public void TestMergeIntervals_WithNormalInput()
+        //{
+        //    var test = new List<long[]>
+        //    {
+        //        new[] {4L, 8L},
+        //        new[] { 12L, 15L},
+        //        new[] { 9L, 10L},
+        //        new[] { 15L, 20L},
+        //        new[] { 3L, 6L},
+        //        new[] { 1L, 2L},
+        //    };
+        //    var expectedResult = new List<long[]>
+        //    {
+        //        new[] { 1L, 2L},
+        //        new[] { 3L, 8L},
+        //        new[] { 9L, 10L},
+        //        new[] { 12L, 20L }
+        //    };
+        //    var result = Program.MergeIntervals(test);
+        //    CollectionAssert.AreEqual(expectedResult, result, StructuralComparisons.StructuralComparer);
+        //}
+
         [TestMethod]
         public void TestMergeIntervals_WithBigNumbers()
         {
@@ -118,7 +143,7 @@ namespace Tests
         [TestMethod]
         public void TestMergeIntervals_ManyIntervals()
         {
-            const int numberOfIntervals = 10000;
+            const int numberOfIntervals = 1000000;
             var test = generateTestIntervals(numberOfIntervals);
             var stopwatch = new Stopwatch();
             stopwatch.Start();
