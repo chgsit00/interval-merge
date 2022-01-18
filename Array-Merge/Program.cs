@@ -18,7 +18,7 @@ namespace Array_Merge
                 new []{15,20},
                 new []{3,6},
                 new []{1,2},
-                new []{1,5} // Not an valid interval, but the program will ignore the 4 and just look at 1 and 5
+                new []{1,3,5} // Not an valid interval, but the program will ignore the 4 and just look at 1 and 5
             };
             try
             {
